@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{the_title}}</h2>
+    <p>The value of R:</p>
+    <table>
+        <tr>
+           <td>G:</td>
+           <td>{{the_G}}</td>
+        </tr>
+        <tr>
+           <td>M:</td>
+           <td>{{the_M}}</td>
+        </tr>
+        <tr>
+           <td>T:</td>
+           <td>{{the_T}}</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+               ((G*M) / 4*(pi**2)*(T**2))
+            </td>
+        </tr>
+        <tr>
+            <td>v:</td>
+            <td>{{the_result}}</td>
+        </tr>
+    </table>
+{% endblock %}

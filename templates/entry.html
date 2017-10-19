@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{the_title}}</h2>
+    <form action="/calculate" method="post">
+        <table>
+            <p>Use the form to submit the data
+            to calculate the ley kepler</p>
+            <tr>
+                <td>G:</td>
+                <td><input type="number" name="G"></td>
+            </tr>
+            <tr>
+                <td>M:</td>
+                <td><input type="number" name="M"></td>
+            </tr>
+            <tr>
+                <td>T:</td>
+                <td><input type="number" name="T"></td>
+            </tr>
+        </table>
+        <p>When you're ready, click this button</p>
+        <p><input type="submit" name="btn_calculate"
+            value="Calculate!"></p>
+    </form>
+{% endblock %}
